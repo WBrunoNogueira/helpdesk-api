@@ -1,3 +1,18 @@
 spring:
   application:
     name: helpdesk-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/helpdesk_db
+    username: postgres
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration

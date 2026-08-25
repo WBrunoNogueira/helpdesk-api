@@ -7,6 +7,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 }
 
 /*
+*
 * save()
 findById()
 findAll()

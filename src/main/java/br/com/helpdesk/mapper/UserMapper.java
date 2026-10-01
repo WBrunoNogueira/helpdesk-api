@@ -28,4 +28,11 @@ public class UserMapper {
                 user.getRole()
         );
     }
+    public void updateEntity(UserRequest request, User user) {
+        user.setName(request.name());
+        user.setFunctionalCode(request.functionalCode());
+        user.setPhone(request.phone());
+        user.setLocation(request.location());
+        user.setRole(request.role());
+    }
 }
